@@ -1,0 +1,133 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="45dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/source"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:fontFamily="sans-serif-light"
+        android:hint="Source"
+        android:textColor="#FF192133"
+        android:textColorHint="#A0192133" />
+
+    <EditText
+        android:id="@+id/destination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#FF192133"
+        android:textColorHint="#A0192133"
+        android:hint="Destination" />
+
+    <EditText
+        android:id="@+id/sdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        android:focusable="true"
+        android:focusableInTouchMode="false"
+        android:fontFamily="sans-serif-light"
+        android:hint="Start Date"
+        android:textColor="#FF192133"
+        android:textColorHint="#A0192133"/>
+    <EditText
+        android:id="@+id/stime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        android:focusable="true"
+        android:focusableInTouchMode="false"
+        android:fontFamily="sans-serif-light"
+        android:hint="Start Time"
+        android:textColor="#FF192133"
+        android:textColorHint="#A0192133"/>
+
+    <EditText
+        android:id="@+id/duration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="time"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:fontFamily="sans-serif-light"
+        android:hint="expected duration "
+        android:textColor="#FF192133"
+        android:textColorHint="#A0192133"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray">
+
+        <TextView
+            android:id="@+id/editText"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/spinner1"
+            android:layout_marginLeft="26dp"
+            android:layout_marginStart="26dp"
+            android:text="route :"
+            android:textSize="22dp" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+
+            android:layout_width="123dp"
+            android:layout_height="34dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="38dp"
+            android:layout_toEndOf="@+id/editText"
+            android:layout_toRightOf="@+id/editText"
+            android:gravity="center"
+            android:prompt="@string/sroute" />
+
+        <Button
+            android:id="@+id/sjourney"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="37dp"
+            android:text="start journey" />
+    </RelativeLayout>
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:text="@string/st_jrny"
+        android:textAppearance="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>
